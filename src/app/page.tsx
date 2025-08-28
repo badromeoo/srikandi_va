@@ -1,9 +1,16 @@
-import Image from "next/image";
+// src/app/page.tsx (Perbaiki ini)
+import { HeroSection } from "@/components/HeroSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1>srikandiVa</h1>
+    <>
+    <div className="bg-[#EDF2F7] min-h-screen">
+    <HeroSection />
     </div>
+    <div>
+      
+    </div>
+    </>
+    
   );
 }
