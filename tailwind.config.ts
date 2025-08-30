@@ -21,6 +21,7 @@ const config = {
     extend: {
        fontFamily: {
         suwari: ["var(--font-suwargi)"],
+        jakarta: ["var(--font-plus-jakarta)"],
         sans: ["var(--font-sans)"], 
       },
       colors: {

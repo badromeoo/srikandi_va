@@ -1,13 +1,6 @@
-// src/components/HeroSection.tsx (Perbaiki ini)
 import Image from "next/image";
 import Link from "next/link";
-import localFont from "next/font/local";
 
-
-const fontSuwargi = localFont({
-  src: "../app/fonts/Suwargi.otf", 
-  
-});
 export function HeroSection() {
   return (
     // Hapus warna latar belakang dari sini
@@ -16,34 +9,31 @@ export function HeroSection() {
         <div className=" grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className=" flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-[71px]">
+              <h1 className={` font-sans text-3xl text-[#404040]  font-bold tracking-normal sm:text-5xl xl:text-[55px]`}>
                 {/* Gunakan font-heading yang sudah kita siapkan */}
-                <span className={` text-[#F45866] ${fontSuwargi.className} tracking-wide`}>Asisten Virtual </span>
+                <span className="font-suwargi text-[#F45866] tracking-wide">Asisten Virtual </span>
+                <br />
                 Cerdas untuk Semua
-                <span className={` text-[#F45866] ${fontSuwargi.className} tracking-wide`}> Kebutuhanmu</span>
+                <span className="font-suwargi text-[#F45866] tracking-wide"> Kebutuhanmu</span>
               </h1>
               <Image src="/images/garisungu.svg" alt="" width={429.11} height={30} />
-              <p className="max-w-[600px] mt-[50px] text-gray-500 md:text-xl dark:text-gray-400 tracking-wide">
+              <p className={`max-w-[600px] mt-[50px]   font-[500] text-gray-500 md:text-xl dark:text-gray-400 tracking-wide`}>
                 Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
                 href="/request"
-                className="inline-flex w-[234px] h-[51] mt-[50px] items-center justify-center rounded-md bg-[#A11692] px-8 text-[15px] font-normal text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-[#A11692] dark:text-[#F9F7F3] dark:hover:bg-[#ae45a3] dark:focus-visible:ring-gray-300"
+                className={`inline-flex  w-[234px] h-[51] mt-[50px] items-center justify-center rounded-md bg-[#A11692] px-8 text-[15px] font-normal text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-[#A11692] dark:text-[#F9F7F3] dark:hover:bg-[#ae45a3] dark:focus-visible:ring-gray-300`}
               >
                 Pelajari selengkapnya
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <Image
-              alt="Hero"
-              className="rounded-xl object-cover"
-              height="550"
-              src="/images/gambarwanita.jpg"
-              width="550"
-            />
+          <div className="md:mt-10 relative flex items-center justify-center">
+            {/* Gambar utama */}
+            <Image alt="Hero" className="rounded-xl object-cover" height="550" src="/images/gambarwanita.jpg" width="550" />
+            <Image alt="Fitur Unggulan" className="absolute bottom-5 md:left-25 lg:left-5 xl:left-10 2xl:left-25" height="500" src="/images/centanghero.svg" width="289" />
           </div>
         </div>
       </div>

@@ -14,11 +14,9 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import localFont from "next/font/local";
 
-const suwargi = localFont({
-  src: "../../app/fonts/Suwargi.ttf",
-});
+
+
 
 // Skema validasi tetap sama
 const formSchema = z.object({
@@ -82,7 +80,7 @@ export function RequestForm() {
   return (
     <Card className="w-full max-w-lg">
       <CardHeader>
-        <CardTitle className={`${suwargi.className}`}>Formulir Permintaan VA</CardTitle>
+        <CardTitle >Formulir Permintaan VA</CardTitle>
         <CardDescription>Isi detail di bawah ini dan tim kami akan segera menghubungi Anda.</CardDescription>
       </CardHeader>
       <Form {...form}>

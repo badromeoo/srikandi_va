@@ -1,12 +1,16 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar"; // Import the Navbar
+import { Navbar } from "@/components/Navbar"; 
+
 
 export const metadata: Metadata = {
   title: "Srikandi VA",
   description: "Virtual Assistant Service",
 };
+
+
+
 
 export default function RootLayout({
   children,
@@ -15,8 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      </head>
       <body>
-        <Navbar /> {/* Place the Navbar here */}
+        <Navbar />
         {children}
       </body>
     </html>
