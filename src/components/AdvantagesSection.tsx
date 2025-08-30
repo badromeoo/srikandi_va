@@ -1,7 +1,4 @@
-
 import Image from "next/image";
-
-
 
 const advantages = [
   {
@@ -31,8 +28,7 @@ export function AdvantagesSection() {
             <div className="space-y-4">
               <div className="inline-block font-suwargi w-[126px] rounded-xl text-center border border-[#A11692] bg-transparent px-3 py-1 text-sm text-[#A11692]">Keuntungan</div>
               <h2 className="text-3xl  tracking-wide sm:text-5xl">
-                <span className={`font-sans `}>Temukan</span> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className={`font-sans`}>yang Memenuhi</span>{" "}
-                <span className="font-suwargi text-[#F45866] ">Kebutuhanmu</span>
+                <span className={` `}>Temukan</span> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className={``}>yang Memenuhi</span> <span className="font-suwargi text-[#F45866] ">Kebutuhanmu</span>
               </h2>
               <p className="max-w-[600px] font-[400] md:text-xl/relaxed dark:text-gray-400">
                 Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak sampai mengatur pekerjaan agar lebih mengehemat waktu.

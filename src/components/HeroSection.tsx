@@ -9,7 +9,7 @@ export function HeroSection() {
         <div className=" grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className=" flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className={` font-sans text-3xl text-[#404040]  font-bold tracking-normal sm:text-5xl xl:text-[55px]`}>
+              <h1 className={`  text-3xl text-[#404040]  font-bold tracking-normal sm:text-5xl xl:text-[55px]`}>
                 {/* Gunakan font-heading yang sudah kita siapkan */}
                 <span className="font-suwargi text-[#F45866] tracking-wide">Asisten Virtual </span>
                 <br />

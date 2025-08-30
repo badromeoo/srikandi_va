@@ -1,14 +1,9 @@
-import type { Config } from "tailwindcss"
-import animatePlugin from "tailwindcss-animate" 
+import type { Config } from "tailwindcss";
+import animatePlugin from "tailwindcss-animate";
 
 const config = {
-  darkMode: "class", 
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+  darkMode: "class",
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -19,10 +14,10 @@ const config = {
       },
     },
     extend: {
-       fontFamily: {
+      fontFamily: {
         suwari: ["var(--font-suwargi)"],
         jakarta: ["var(--font-plus-jakarta)"],
-        sans: ["var(--font-sans)"], 
+        sans: ["var(--)"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -80,7 +75,7 @@ const config = {
       },
     },
   },
-  plugins: [animatePlugin], 
-} satisfies Config
+  plugins: [animatePlugin],
+} satisfies Config;
 
-export default config
+export default config;

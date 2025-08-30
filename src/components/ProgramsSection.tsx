@@ -1,4 +1,3 @@
-
 const programs = [
   { title: "Sales Support", items: ["Lead research and prospecting", "Client outreach", "CRM management and data entry", "Follow-ups and appointment scheduling"] },
   { title: "Executive Assistant", items: ["Calendar and email management", "Travel planning and meeting coordination", "Document preparation and report creation", "Personal task assistance"] },
@@ -17,7 +16,7 @@ export function ProgramsSection() {
           {/* Kolom Teks Kiri */}
           <div className="space-y-4">
             <div className="inline-block rounded-lg border border-[#A11692] bg-transparent px-3 py-1 text-sm font-suwargi text-[#A11692]">Program kami</div>
-            <h2 className={`font-sans text-3xl  tracking-tighter sm:text-4xl lg:text-4xl md:text-4xl`}>
+            <h2 className={` text-3xl  tracking-tighter sm:text-4xl lg:text-4xl md:text-4xl`}>
               Sekecil Apapun <span className="font-suwargi text-[#F45866] tracking-normal">Tugasnya</span> <br />
               Dapat Memberi <span className="font-suwargi text-[#F45866] tracking-normal">Manfaat yang</span> <span className="font-suwargi text-[#F45866] tracking-normal">Besar</span>
             </h2>
@@ -31,7 +30,7 @@ export function ProgramsSection() {
         <div className="grid gap-10 lg:grid-cols-1 mt-[50px] lg:gap-16">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {programs.map((program) => (
-              <div key={program.title} className={`font-sans flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-[#A11692]`}>
+              <div key={program.title} className={` flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-[#A11692]`}>
                 <h3 className="text-xl ">{program.title}</h3>
                 <ul className="mt-4 space-y-2 text-sm text-gray-500 underline underline-offset-8 mb-[40px] dark:text-[#A11692]">
                   {program.items.map((item) => (

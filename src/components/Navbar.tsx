@@ -15,7 +15,7 @@ export function Navbar() {
         {/* Tombol Navigasi */}
         <nav>
           <Link
-            className={`font-sans inline-flex items-center justify-center rounded-md bg-[#A11692] px-5 py-2.5 text-center text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-[#ae45a3] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 lg:px-8 lg:py-3 lg:text-base`}
+            className={` inline-flex items-center justify-center rounded-md bg-[#A11692] px-5 py-2.5 text-center text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-[#ae45a3] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 lg:px-8 lg:py-3 lg:text-base`}
             href="/request"
           >
             Hubungi kami
