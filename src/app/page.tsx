@@ -3,8 +3,8 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutUs } from "@/components/AboutUs";
 import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { ProgramsSection } from "@/components/ProgramsSection";
-
-
+import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -20,6 +20,12 @@ export default function HomePage() {
     </div>
     <div className="bg-[#EDF2F7] ">
       <ProgramsSection />
+    </div>
+    <div className="bg-[#EDF2F7] ">
+      <HowItWorksSection />
+    </div>
+    <div>
+      <Footer />
     </div>
     </>
     

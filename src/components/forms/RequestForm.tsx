@@ -78,9 +78,9 @@ export function RequestForm() {
   }
 
   return (
-    <Card className="w-full max-w-lg">
+    <Card className="w-full  max-w-lg">
       <CardHeader>
-        <CardTitle >Formulir Permintaan VA</CardTitle>
+        <CardTitle >Formulir <span className="font-suwargi text-[#F45866]">Permintaan </span>VA</CardTitle>
         <CardDescription>Isi detail di bawah ini dan tim kami akan segera menghubungi Anda.</CardDescription>
       </CardHeader>
       <Form {...form}>
