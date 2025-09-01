@@ -4,7 +4,7 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     // Hapus warna latar belakang dari sini
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className=" py-12 md:py-24 lg:py-10 ">
       <div className="container mx-auto px-4 md:px-6">
         <div className=" grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className=" flex flex-col justify-center space-y-4">
@@ -17,7 +17,7 @@ export function HeroSection() {
                 <span className="font-suwargi text-[#F45866] tracking-wide"> Kebutuhanmu</span>
               </h1>
               <Image src="/images/garisungu.svg" alt="" width={429.11} height={30} />
-              <p className={`max-w-[600px] mt-[50px]   font-[500] text-gray-500 md:text-xl dark:text-gray-400 tracking-wide`}>
+              <p className={`max-w-[600px] mt-[50px] font-[500] text-gray-500 md:text-xl dark:text-gray-400 tracking-wider`}>
                 Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
               </p>
             </div>
@@ -32,7 +32,7 @@ export function HeroSection() {
           </div>
           <div className="md:mt-10 relative flex items-center justify-center">
             {/* Gambar utama */}
-            <Image alt="Hero" className="rounded-xl object-cover" height="550" src="/images/gambarwanita.jpg" width="550" />
+            <Image alt="Hero" className="rounded-xl object-cover" height="550" src="/images/gambarwanitahero.jpg" width="550" />
             <Image alt="Fitur Unggulan" className="absolute bottom-5 md:left-25 lg:left-5 xl:left-10 2xl:left-25" height="500" src="/images/centanghero.svg" width="289" />
           </div>
         </div>

@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer";
 export default function HomePage() {
   return (
     <>
-    <div className="bg-[#EDF2F7]  min-h-screen">
+    <div className="bg-[#EDF2F7] ">
     <HeroSection />
     </div>
     <div>

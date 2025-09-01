@@ -10,7 +10,7 @@ export function AboutUs() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex justify-center">
-              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanitaTentangKami.jpg" width={700} height={500} />
+              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
             </div>
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
@@ -19,12 +19,12 @@ export function AboutUs() {
                     <p className="font-suwargi">Tentang kami</p>
                   </div>
                 </Link>
-                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] md:text-4xl sm:text-5xl tracking-normal  mt-5 ">
+                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] lg:text-4xl md:text-4xl sm:text-5xl   mt-5 ">
                   <span className={` font-bold `}>Berawal dari</span> <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> <br /> <span className={` font-bold `}>yang Kesulitan Mencari</span>
                   <br />
                   <span className="font-suwargi text-[#F45866] ">Pekerjaan yang Layak</span>
                 </h2>
-                <p className={` max-w-[600px] font-[400] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400`}>
+                <p className={` max-w-[600px] font-light text-gray-500 md:text-xl/relaxed tracking-wider lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400`}>
                   Banyak ibu rumah tangga yang kesulitan mencari pekerjaan layak karena terbatasnya peluang dan perusahaan yang lebih mengutamakan talenta muda. <br /> <br /> Kami hadir untuk memberikan solusi dengan menciptakan peluang
                   kerja sebagai asisten virtual, memungkinkan ibu rumah tangga memanfaatkan pengalaman dan waktu luang mereka tanpa meninggalkan peran sebagai ibu dan pengurus rumah tangga.
                 </p>
@@ -39,17 +39,17 @@ export function AboutUs() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="lg:order-last flex justify-center">
-              <Image alt="Meningkatkan Produktivitas" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanitaTentangKami.jpg" width={700} height={500} />
+              <Image alt="Meningkatkan Produktivitas" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
             </div>
             {/* Kolom Teks */}
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
-                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] sm:text-5xl tracking-wide">
+                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] font-normal sm:text-5xl ">
                   <span className={` font-bold `}>Membantu</span>
                   <span className="font-suwargi text-[#F45866] "> Ibu Rumah Tangga</span> <span className={` font-bold `}>dan Meningkatkan </span>
                   <span className={`font-suwargi text-[#F45866]`}>Produktivitasmu</span>
                 </h2>
-                <p className={` max-w-[600px] font-light text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400`}>
+                <p className={` max-w-[600px] font-light tracking-wider text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400`}>
                   Tugas-tugas kecil yang sering terabaikan bisa menghambat produktivitas. Dengan merekrut asisten virtual, kamu bisa mendelegasikan pekerjaan tersebut dan fokus pada hal-hal yang lebih penting. <br /> <br /> Kami ada untuk
                   membantu ibu rumah tangga terampil, memberikan dukungan efisien dan meningkatkan produktivitasmu.
                 </p>
