@@ -44,7 +44,7 @@ export function AboutUs() {
             {/* Kolom Teks */}
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
-                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] font-normal sm:text-5xl ">
+                <h2 className=" 2xl:text-4xl xl:text-[36px] font-normal sm:text-5xl ">
                   <span className={` font-bold `}>Membantu</span>
                   <span className="font-suwargi text-[#F45866] "> Ibu Rumah Tangga</span> <span className={` font-bold `}>dan Meningkatkan </span>
                   <span className={`font-suwargi text-[#F45866]`}>Produktivitasmu</span>
