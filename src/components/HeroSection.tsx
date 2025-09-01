@@ -23,7 +23,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
-                href="/request"
+                href="#about-us"
                 className={`inline-flex  w-[234px] h-[51] mt-[50px] items-center justify-center rounded-md bg-[#A11692] px-8 text-[15px] font-normal text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-[#A11692] dark:text-[#F9F7F3] dark:hover:bg-[#ae45a3] dark:focus-visible:ring-gray-300`}
               >
                 Pelajari selengkapnya
