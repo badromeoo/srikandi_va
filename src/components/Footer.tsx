@@ -18,12 +18,12 @@ export function Footer() {
         </div>
 
         {/* Kolom Kanan: Tombol & Logo */}
-        <div className="flex flex-col items-end gap-y-6">
+        <div className="flex flex-col  items-end gap-y-6">
           <Link
             href="/request"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-[#A11692] px-6 text-sm font-medium text-white shadow transition-colors hover:bg-[#A11692]/90"
+            className="inline-flex  h-10 items-center justify-center rounded-md bg-[#A11692] px-6 text-sm font-medium text-white shadow transition-colors hover:bg-[#A11692]/90 "
           >
-            Hubungi kami
+            <p className="">Hubungi kami</p>
           </Link>
           <Image
             alt="Logo Srikandi VA"
