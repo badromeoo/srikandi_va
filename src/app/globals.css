@@ -128,4 +128,10 @@
   html {
     @apply scroll-smooth; 
   }
+  h2{
+    color: #404040;
+  }
+ h3{
+    color: #404040;
+  }
 }

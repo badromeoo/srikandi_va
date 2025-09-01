@@ -19,8 +19,8 @@ export function AboutUs() {
                     <p className="font-suwargi">Tentang kami</p>
                   </div>
                 </Link>
-                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] lg:text-4xl md:text-4xl sm:text-5xl   mt-5 ">
-                  <span className={` font-bold `}>Berawal dari</span> <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> <br /> <span className={` font-bold `}>yang Kesulitan Mencari</span>
+                <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] text[#404040] lg:text-4xl md:text-4xl sm:text-5xl   mt-5 ">
+                  <span className={`  font-bold `}>Berawal dari</span> <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> <br /> <span className={` font-bold `}>yang Kesulitan Mencari</span>
                   <br />
                   <span className="font-suwargi text-[#F45866] ">Pekerjaan yang Layak</span>
                 </h2>
