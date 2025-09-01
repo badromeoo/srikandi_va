@@ -15,10 +15,10 @@ const config = {
     },
     extend: {
       fontFamily: {
-        suwari: ["var(--font-suwargi)"],
-        jakarta: ["var(--font-plus-jakarta)"],
-        sans: ["var(--)"],
-      },
+  suwargi: ["var(--font-suwargi)", "sans-serif"],
+  jakarta: ["var(--font-plus-jakarta)", "sans-serif"],
+  sans: ["var(--font-plus-jakarta)", "sans-serif"],
+},
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
