@@ -19,7 +19,7 @@ export function Footer() {
         {/* Kolom Kanan: Tombol & Logo */}
         <div className="flex flex-col  items-end gap-y-6">
           <Link href="/request" className="inline-flex  h-10 items-center justify-center rounded-md bg-[#A11692] px-6 text-sm font-medium text-white shadow transition-colors hover:bg-[#A11692]/90 ">
-            <p className="">Hubungi kami</p>
+            <p className=" text-center">Hubungi kami</p>
           </Link>
           <Image alt="Logo Srikandi VA" className="h-auto mt-5 w-[180px] sm:w-[250px]" src="/images/srikandi-footer.svg" width={250} height={40} />
         </div>
