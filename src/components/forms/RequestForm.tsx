@@ -75,7 +75,7 @@ export function RequestForm() {
       <div className="grid lg:grid-cols-2  gap-30 2xl:gap-50 items-center">
         {/* Kolom Kiri: Judul dan Form */}
         <div className="space-y-6">
-          <h2 className="text-2xl 2xl:text-5xl mb-[50px] xl:text-[36px] font-normal sm:text-5xl">
+          <h2 className=" 2xl:text-5xl mb-[50px] xl:text-[36px] font-normal sm:text-5xl">
             <span className="font-suwargi text-[#F45866]">Hubungi Kami</span>
             <span className="font-bold"> dan Mulai Tingkatkan </span>
             <span className="font-suwargi text-[#F45866]">Produktivitas</span> <span className="font-bold">Kerja</span>

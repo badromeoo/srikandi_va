@@ -6,6 +6,14 @@ const config = {
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
+    // PINDAHKAN BLOK SCREENS KE SINI
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -79,3 +87,4 @@ const config = {
 } satisfies Config;
 
 export default config;
+

@@ -126,12 +126,26 @@
     @apply border-border outline-ring/50;
   }
   html {
-    @apply scroll-smooth; 
+    @apply scroll-smooth;
   }
-  h2{
+  h2 {
     color: #404040;
+    line-height: 135%;
+    font-size: 26px; 
+    @apply font-bold ;
   }
- h3{
+  
+  h3 {
     color: #404040;
+    line-height: 135%;
+    font-size: 20px;
+    @apply font-bold ;
+  }
+  p {
+    letter-spacing: 0.05em;
+    line-height: 140%;
   }
 }
+
+
+
