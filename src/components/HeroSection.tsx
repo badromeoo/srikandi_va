@@ -9,15 +9,15 @@ export function HeroSection() {
         <div className=" grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className=" flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className={`  text-3xl text-[#404040]  font-bold tracking-normal sm:text-5xl xl:text-[55px]`}>
+              <h1 className={`  text-3xl text-[#404040] leading-[1] font-bold  sm:text-5xl tracking-[2px] xl:text-[55px]`}>
                 {/* Gunakan font-heading yang sudah kita siapkan */}
-                <span className="font-suwargi text-[#F45866] tracking-wide">Asisten Virtual </span>
+                <span className="font-suwargi text-[#F45866] tracking-[2px]">Asisten Virtual </span>
                 <br />
                 Cerdas untuk Semua
-                <span className="font-suwargi text-[#F45866] tracking-wide"> Kebutuhanmu</span>
+                <span className="font-suwargi text-[#F45866] tracking-[2px]"> Kebutuhanmu</span>
               </h1>
               <Image src="/images/garisungu.svg" alt="" width={429.11} height={30} />
-              <p className={`max-w-[600px] mt-[50px] font-[500] text-gray-500 md:text-xl dark:text-gray-400 tracking-wider`}>
+              <p className={`max-w-[600px] mt-[50px]  font-[300] text-gray-500 md:text-xl dark:text-gray-400 `}>
                 Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
               </p>
             </div>

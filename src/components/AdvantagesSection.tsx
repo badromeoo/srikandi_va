@@ -1,3 +1,5 @@
+// src/components/AdvantagesSection.tsx
+
 import Image from "next/image";
 
 const advantages = [
@@ -26,11 +28,13 @@ export function AdvantagesSection() {
           {/* Kolom Teks Kiri */}
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-4">
-              <div className="font-suwargi inline-flex items-center justify-center w-[130px] h-[30px] rounded-xl bg-transparent border-1 border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">Keuntungan</div>
-              <h2 className="text-2xl 2xl:text-4xl xl:text-[36px] font-normal sm:text-5xl">
-                <span className={`font-bold `}>Temukan</span> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className={`font-bold`}>yang Memenuhi</span> <span className="font-suwargi text-[#F45866] ">Kebutuhanmu</span>
+              <div className="font-suwargi inline-flex items-center justify-center w-[130px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">
+                Keuntungan
+              </div>
+              <h2 className="text-[26px]  sm:text-3xl xl:text-5xl">
+                Temukan <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> yang Memenuhi <span className="font-suwargi text-[#F45866]">Kebutuhanmu</span>
               </h2>
-              <p className="font-light text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400 tracking-wider">
+              <p className="max-w-[600px] font-light text-gray-500 md:text-xl/relaxed dark:text-gray-400">
                 Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak sampai mengatur pekerjaan agar lebih mengehemat waktu.
               </p>
             </div>
@@ -40,10 +44,22 @@ export function AdvantagesSection() {
           <div className="flex flex-col gap-8">
             {advantages.map((advantage) => (
               <div key={advantage.title} className="flex items-start gap-4">
-                <Image src={advantage.icon} alt={`${advantage.title} icon`} width={64} height={64} />
+                {/* Ikon yang ukurannya responsif */}
+                <Image
+                  src={advantage.icon}
+                  alt={`${advantage.title} icon`}
+                  width={48} // Ukuran default untuk mobile
+                  height={48}
+                  className="sm:w-16 sm:h-16" // Ukuran lebih besar di layar sm ke atas
+                />
                 <div className="grid gap-1">
-                  <h3 className="text-[24px] font-bold">{advantage.title}</h3>
-                  <p className="text-[14px] text-gray-500 dark:text-gray-400 font-light">{advantage.description}</p>
+                  {/* Judul yang ukurannya responsif */}
+                  <h3 className="  sm:text-xl">
+                    {advantage.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 font-light">
+                    {advantage.description}
+                  </p>
                 </div>
               </div>
             ))}

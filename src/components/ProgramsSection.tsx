@@ -15,8 +15,8 @@ export function ProgramsSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Kolom Teks Kiri */}
           <div className="space-y-4">
-            <div className="inline-block text-center rounded-xl border border-[#A11692] bg-transparent w-[130px] h-[30px] px-3 py-1 text-sm font-suwargi text-[#A11692]">Program kami</div>
-            <h2 className={`text-2xl 2xl:text-4xl xl:text-[36px] font-normal sm:text-5xl`}>
+            <div className="inline-block text-center rounded-xl border border-[#A11692] bg-transparent w-[140px] h-[30px] px-3 py-1 text-sm font-suwargi text-[16px] text-[#A11692]">Program kami</div>
+            <h2 className={` 2xl:text-4xl xl:text-[36px] font-normal sm:text-3xl`}>
               <span className="font-bold">Sekecil Apapun</span> <span className="font-suwargi text-[#F45866] ">Tugasnya </span>
               <span className="font-bold">Dapat Memberi </span>
               <span className="font-suwargi text-[#F45866] ">Manfaat yang</span> <span className="font-suwargi text-[#F45866] ">Besar</span>
