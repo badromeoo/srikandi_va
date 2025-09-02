@@ -23,7 +23,7 @@ export function HowItWorksSection() {
         {/* Menghapus centering agar teks berada di kiri */}
         <div className="space-y-4">
           <div className="space-y-2">
-            <div className="inline-block text-center rounded-xl border border-[#A11692] bg-transparent w-[130px] h-[30px] px-3 py-1 text-sm font-suwargi text-[#A11692]">Cara Kerja</div>
+            <div className="inline-block text-center rounded-xl border border-[#A11692] bg-transparent w-[130px] h-[30px] px-3 py-1 text-[16px] font-suwargi text-[#A11692]">Cara Kerja</div>
             <h2 className=" 2xl:text-4xl xl:text-[36px] font-normal sm:text-3xl">
               <span className="font-bold">Langkah Mudah Menemukan</span>
               <br /> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className="font-bold">yang</span> <span className="font-suwargi text-[#F45866]">Sesuai</span>
