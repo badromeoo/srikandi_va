@@ -36,7 +36,7 @@ export function ProgramsSection() {
                   {program.items.map((item) => (
                     <li key={item} className="flex items-start">
                       <span className="mr-2 mt-1 block h-1.5 w-1.5 rounded-full bg-[#A11692]" />
-                      <span className="mb-4 text-black">{item}</span>
+                      <span className="mb-4 text-[#7F7E7E]">{item}</span>
                     </li>
                   ))}
                 </ul>
