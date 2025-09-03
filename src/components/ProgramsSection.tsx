@@ -10,7 +10,7 @@ const programs = [
 export function ProgramsSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="w-full px-4 md:px-6">
+      <div className="w-full lg:container lg:mx-auto md:container md:mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Kolom Teks Kiri */}
           <div className="space-y-4">

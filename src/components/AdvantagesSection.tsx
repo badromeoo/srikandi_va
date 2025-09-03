@@ -31,7 +31,7 @@ export function AdvantagesSection() {
               <div className="font-suwargi inline-flex items-center justify-center w-[130px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">
                 Keuntungan
               </div>
-              <h2 className="text-[26px]  sm:text-3xl xl:text-5xl">
+              <h2 className="text-[26px]  sm:text-3xl xl:text-4xl">
                 Temukan <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> yang Memenuhi <span className="font-suwargi text-[#F45866]">Kebutuhanmu</span>
               </h2>
               <p className="max-w-[600px] font-light  md:text-xl/relaxed ">
