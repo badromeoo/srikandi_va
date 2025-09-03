@@ -17,12 +17,12 @@ export function ProgramsSection() {
             <div className="inline-block rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-center font-suwargi text-[16px] text-[#A11692]">
               Program kami
             </div>
-            <h2 className="text-3xl font-normal sm:text-3xl 2xl:text-4xl xl:text-[36px]">
+            <h2 className=" font-normal sm:text-3xl 2xl:text-4xl xl:text-[36px]">
               <span className="font-bold">Sekecil Apapun</span> <span className="font-suwargi text-[#F45866]">Tugasnya </span>
               <span className="font-bold">Dapat Memberi </span>
               <span className="font-suwargi text-[#F45866]">Manfaat yang</span> <span className="font-suwargi text-[#F45866]">Besar</span>
             </h2>
-            <p className="max-w-[600px] font-light text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed">
+            <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed">
               Asisten virtual dapat membantu meningkatkan produktivitasmu dengan mengerjakan tugas yang tidak memiliki prioritas tinggi namun memerlukan waktu untuk mengerjakannya.
             </p>
           </div>
@@ -32,7 +32,7 @@ export function ProgramsSection() {
             {programs.map((program) => (
               <div key={program.title} className="flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-[#A11692]">
                 <h3 className="text-xl">{program.title}</h3>
-                <ul className="mt-4 mb-[40px] space-y-2 text-sm text-gray-500 underline underline-offset-8 dark:text-[#A11692]">
+                <ul className="mt-4 mb-[40px] space-y-2 text-sm underline underline-offset-8 dark:text-[#A11692]">
                   {program.items.map((item) => (
                     <li key={item} className="flex items-start">
                       <span className="mr-2 mt-1 block h-1.5 w-1.5 rounded-full bg-[#A11692]" />

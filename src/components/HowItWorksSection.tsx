@@ -28,7 +28,7 @@ export function HowItWorksSection() {
               <span className="font-bold">Langkah Mudah Menemukan</span>
               <br /> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className="font-bold">yang</span> <span className="font-suwargi text-[#F45866]">Sesuai</span>
             </h2>
-            <p className="font-light text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400">Mendapat kandidat asisten virtual lebih mudah dengan talenta pilihan kami.</p>
+            <p className="font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">Mendapat kandidat asisten virtual lebih mudah dengan talenta pilihan kami.</p>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export function HowItWorksSection() {
                 <div className="flex flex-col items-center text-center p-6 h-full rounded-lg border border-[#A11692]">
                   <Image src={step.icon} alt={`${step.title} icon`} width={80} height={80} />
                   <h3 className="mt-4 ">{step.title}</h3>
-                  <p className="mt-2 text-sm font-light  text-gray-500">{step.description}</p>
+                  <p className="mt-2 text-sm font-light  ">{step.description}</p>
                 </div>
               </div>
             ))}

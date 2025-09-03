@@ -8,20 +8,14 @@ export function AboutUs() {
       <section id="about-us" className="w-full bg-white py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-             <div className=" w-[140px] items-center justify-center rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 lg:hidden">
-                <p className="font-suwargi">Tentang kami</p>
-              </div>
+            <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 lg:hidden">
+              Tentang kami
+            </div>
             {/* Kolom Gambar */}
             <div className="flex flex-col items-center">
-              {/* Tag "Tentang kami" khusus untuk mobile, muncul di atas gambar */}
-             
-              <Image
-                alt="Ibu Rumah Tangga Bekerja"
-                className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]"
-                src="/images/gambarwanita_aboutus.png"
-                width={700}
-                height={500}
-              />
+            
+
+              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
             </div>
 
             {/* Kolom Teks */}
@@ -29,15 +23,14 @@ export function AboutUs() {
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
                 <Link href="/request" className="hidden lg:inline-block">
-                  <div className="inline-flex items-center justify-center w-[140px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">
-                    <p className="font-suwargi">Tentang kami</p>
-                  </div>
+                  <div className="inline-flex items-center justify-center  w-[140px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">Tentang kami</div>
                 </Link>
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Berawal dari <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
                 </h2>
-                <p className="max-w-[600px] font-light text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400">
-                  Banyak ibu rumah tangga yang kesulitan mencari pekerjaan layak karena terbatasnya peluang dan perusahaan yang lebih mengutamakan talenta muda. <br /> <br /> Kami hadir untuk memberikan solusi dengan menciptakan peluang kerja sebagai asisten virtual.
+                <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
+                  Banyak ibu rumah tangga yang kesulitan mencari pekerjaan layak karena terbatasnya peluang dan perusahaan yang lebih mengutamakan talenta muda. <br /> <br /> Kami hadir untuk memberikan solusi dengan menciptakan peluang
+                  kerja sebagai asisten virtual.
                 </p>
               </div>
             </div>
@@ -58,14 +51,15 @@ export function AboutUs() {
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Membantu <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> dan Meningkatkan <span className="font-suwargi text-[#F45866]">Produktivitasmu</span>
                 </h2>
-                <p className="max-w-[600px] font-light text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed dark:text-gray-400">
-                  Tugas-tugas kecil yang sering terabaikan bisa menghambat produktivitas. Dengan merekrut asisten virtual, kamu bisa mendelegasikan pekerjaan tersebut dan fokus pada hal-hal yang lebih penting. <br /> <br /> Kami ada untuk membantu ibu rumah tangga terampil, memberikan dukungan efisien dan meningkatkan produktivitasmu.
+                <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
+                  Tugas-tugas kecil yang sering terabaikan bisa menghambat produktivitas. Dengan merekrut asisten virtual, kamu bisa mendelegasikan pekerjaan tersebut dan fokus pada hal-hal yang lebih penting. <br /> <br /> Kami ada untuk
+                  membantu ibu rumah tangga terampil, memberikan dukungan efisien dan meningkatkan produktivitasmu.
                 </p>
                 {/* Pembungkus ini memastikan tombol berada di kiri */}
                 <div className="flex justify-start">
-                    <Link className="inline-flex h-10 items-center justify-center rounded-md bg-[#A11692] px-8 text-sm font-bold text-gray-50 shadow transition-colors hover:bg-gray-900/90" href="/request">
-                        Hubungi kami
-                    </Link>
+                  <Link className="inline-flex text-white h-10 items-center justify-center rounded-md bg-[#A11692] px-8 text-sm   shadow transition-colors hover:bg-gray-900/90" href="/request">
+                    Hubungi kami
+                  </Link>
                 </div>
               </div>
             </div>
