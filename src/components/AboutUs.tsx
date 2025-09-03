@@ -13,8 +13,6 @@ export function AboutUs() {
             </div>
             {/* Kolom Gambar */}
             <div className="flex flex-col items-center">
-            
-
               <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
             </div>
 
@@ -23,7 +21,9 @@ export function AboutUs() {
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
                 <Link href="/request" className="hidden lg:inline-block">
-                  <div className="inline-flex items-center justify-center  w-[140px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">Tentang kami</div>
+                  <div className="inline-flex items-center justify-center font-suwargi  w-[140px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">
+                    Tentang kami
+                  </div>
                 </Link>
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Berawal dari <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
