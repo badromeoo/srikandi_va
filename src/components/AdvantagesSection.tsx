@@ -34,7 +34,7 @@ export function AdvantagesSection() {
               <h2 className="text-[26px]  sm:text-3xl xl:text-5xl">
                 Temukan <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> yang Memenuhi <span className="font-suwargi text-[#F45866]">Kebutuhanmu</span>
               </h2>
-              <p className="max-w-[600px] font-light text-gray-500 md:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[600px] font-light  md:text-xl/relaxed ">
                 Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak sampai mengatur pekerjaan agar lebih mengehemat waktu.
               </p>
             </div>
@@ -57,7 +57,7 @@ export function AdvantagesSection() {
                   <h3 className="  sm:text-xl">
                     {advantage.title}
                   </h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 font-light">
+                  <p className="text-sm  font-light">
                     {advantage.description}
                   </p>
                 </div>

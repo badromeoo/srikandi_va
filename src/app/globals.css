@@ -142,7 +142,7 @@
     @apply font-bold ;
   }
   p {
-    
+    color: #7F7E7E;
     letter-spacing: 0.05em;
     line-height: 140%;
   }
