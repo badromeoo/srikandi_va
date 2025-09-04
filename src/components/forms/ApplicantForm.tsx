@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
 import { createClient } from "@/lib/supabaseClient";
-
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -14,59 +13,43 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
-// Skema validasi tetap sama
-const formSchema = z.object({
-  fullName: z.string().min(3, { message: "Nama lengkap harus diisi (minimal 3 karakter)." }),
+const applicantSchema = z.object({
+  fullName: z.string().min(3, { message: "Nama lengkap harus diisi." }),
   email: z.string().email({ message: "Format email tidak valid." }),
   phoneNumber: z.string().min(10, { message: "Nomor telepon minimal 10 digit." }),
-  companyName: z.string().optional(),
-  description: z.string().min(10, { message: "Deskripsi harus diisi (minimal 10 karakter)." }),
+  skills: z.string().min(20, { message: "Jelaskan keahlian Anda." }),
 });
 
-export function RequestForm() {
+export function ApplicantForm() {
   const [isLoading, setIsLoading] = useState(false);
   const supabase = createClient();
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullName: "",
-      email: "",
-      phoneNumber: "",
-      companyName: "",
-      description: "",
-    },
+  const form = useForm<z.infer<typeof applicantSchema>>({
+    resolver: zodResolver(applicantSchema),
+    defaultValues: { fullName: "", email: "", phoneNumber: "", skills: "" },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof applicantSchema>) {
     setIsLoading(true);
     try {
-      // Memanggil Edge Function
-      const { data, error } = await supabase.functions.invoke("submit-form", {
+      // Panggil Edge Function hanya dengan data teks
+      const { error } = await supabase.functions.invoke("submit-applicant", {
         body: values,
       });
 
-      // PENTING: Selalu periksa error dari pemanggilan function terlebih dahulu
       if (error) {
         throw new Error(error.message);
       }
 
-      // Menampilkan notifikasi sukses dengan pesan yang bersih
-      toast.success("Permintaan Terkirim!", {
-        description: "Terima kasih, tim kami akan segera menghubungi Anda.",
-        classNames: {
-          description: "text-foreground", 
-        },
+      toast.success("Lamaran Terkirim!", {
+        description: "Terima kasih, kami akan meninjau lamaran Anda.",
       });
-
-      console.log("Response dari server:", data);
-      form.reset(); 
+      form.reset();
     } catch (error) {
-      
       toast.error("Terjadi Kesalahan", {
-        description: error instanceof Error ? error.message : "Gagal mengirim permintaan. Coba lagi nanti.",
+        description: error instanceof Error ? error.message : "Gagal mengirim lamaran.",
       });
-      console.error("Error submitting form:", error);
+      console.error("Error submitting application:", error);
     } finally {
       setIsLoading(false);
     }
@@ -76,14 +59,13 @@ export function RequestForm() {
     <Card className="w-full bg-white border border-[#A11692]">
       <CardHeader>
         <CardTitle>
-          Formulir <span className="font-suwargi text-[#F45866]">Permintaan</span> VA
+          Formulir <span className="font-suwargi text-[#F45866]">Lamaran</span> VA
         </CardTitle>
-        <CardDescription>Isi detail di bawah ini dan tim kami akan segera menghubungi Anda.</CardDescription>
+        <CardDescription>Isi detail di bawah ini untuk menjadi bagian dari tim kami.</CardDescription>
       </CardHeader>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           <CardContent className="grid gap-4">
-            {/* ... Semua FormField tetap sama ... */}
             <FormField
               control={form.control}
               name="fullName"
@@ -91,7 +73,7 @@ export function RequestForm() {
                 <FormItem>
                   <FormLabel>Nama Lengkap</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder="Jane Doe" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -104,7 +86,7 @@ export function RequestForm() {
                 <FormItem>
                   <FormLabel>Alamat Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="johndoe@example.com" {...field} />
+                    <Input placeholder="janedoe@example.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -125,27 +107,12 @@ export function RequestForm() {
             />
             <FormField
               control={form.control}
-              name="companyName"
+              name="skills"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
-                    Nama Perusahaan <span className="text-xs text-muted-foreground">(Opsional)</span>
-                  </FormLabel>
+                  <FormLabel>Jelaskan Keahlian Anda</FormLabel>
                   <FormControl>
-                    <Input placeholder="PT Incognito Asia" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="description"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Jelaskan Kebutuhan Anda</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder="Saya butuh bantuan untuk mengelola jadwal meeting..." className="min-h-[100px]" {...field} />
+                    <Textarea placeholder="Saya ahli dalam manajemen media sosial, riset data..." className="min-h-[100px]" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -154,7 +121,7 @@ export function RequestForm() {
           </CardContent>
           <CardFooter>
             <Button type="submit" className="w-full mt-4" disabled={isLoading}>
-              {isLoading ? "Mengirim..." : "Kirim Permintaan"}
+              {isLoading ? "Mengirim..." : "Kirim Lamaran"}
             </Button>
           </CardFooter>
         </form>
@@ -162,4 +129,3 @@ export function RequestForm() {
     </Card>
   );
 }
-

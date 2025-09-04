@@ -2,18 +2,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar"; 
-import localFont from 'next/font/local';
+import { Toaster } from "sonner";
+
 
 export const metadata: Metadata = {
   title: "Srikandi VA",
   description: "Virtual Assistant Service",
 };
 
-const suwargiFont = localFont({
-  src: '../../public/fonts/Suwargi.otf',
-  variable: '--font-suwargi',
-  display: 'swap',
-});
+
 
 
 export default function RootLayout({ 
@@ -22,8 +19,9 @@ export default function RootLayout({
   children: React.ReactNode 
 }) {
   return (
-    <html lang="en" className={`${suwargiFont.variable}`}>
+    <html lang="en">
       <body>
+        <Toaster position="top-right" />
         <Navbar />
         {children}
       </body>
