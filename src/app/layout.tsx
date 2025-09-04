@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body>
         <Toaster position="top-right" />
-        <Navbar />
+        
         {children}
       </body>
     </html>

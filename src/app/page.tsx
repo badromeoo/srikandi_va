@@ -5,10 +5,11 @@ import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { ProgramsSection } from "@/components/ProgramsSection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { Footer } from "@/components/Footer";
-
+import { Navbar } from "@/components/Navbar";
 export default function HomePage() {
   return (
     <>
+    <Navbar />
     <div className="bg-[#EDF2F7] ">
     <HeroSection />
     </div>
