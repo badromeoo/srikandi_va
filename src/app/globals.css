@@ -131,22 +131,19 @@
   h2 {
     color: #404040;
     line-height: 135%;
-    font-size: 26px; 
-    @apply font-bold ;
+    font-size: 26px;
+    @apply font-bold;
   }
-  
+
   h3 {
     color: #404040;
     line-height: 135%;
     font-size: 20px;
-    @apply font-bold ;
+    @apply font-bold;
   }
   p {
-    color: #7F7E7E;
+    color: #7f7e7e;
     letter-spacing: 0.05em;
     line-height: 140%;
   }
 }
-
-
-
