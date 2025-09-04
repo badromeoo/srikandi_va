@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar"; 
-
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Srikandi VA",
@@ -22,6 +22,7 @@ export default function RootLayout({
       <head>
       </head>
       <body>
+        <Toaster position="top-right" />
         <Navbar />
         {children}
       </body>
