@@ -21,7 +21,7 @@ export function AboutUs() {
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
 
-                <div className="inline-flex items-center justify-center font-suwargi  w-[140px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors">Tentang kami</div>
+                
 
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Berawal dari <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
