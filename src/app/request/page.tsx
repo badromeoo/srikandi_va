@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { RequestForm } from "@/components/forms/RequestForm";
 import { ApplicantForm } from "@/components/forms/ApplicantForm";
-import { Footer } from "@/components/Footer";
+
 import { NavbarForm } from "@/components/NavBarForm";
 export default function RequestPage() {
   return (

@@ -18,7 +18,7 @@ export function HeroSection() {
               </h1>
               <Image src="/images/garisungu.svg" alt="" width={429.11} height={30} />
               <p className={`max-w-[600px] 2xl:mt-[50px] mt-[20px]  font-[300]  md:text-xl  `}>
-                Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
+               Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

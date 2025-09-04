@@ -28,7 +28,7 @@ export function AdvantagesSection() {
           {/* Kolom Teks Kiri */}
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-4">
-              <div className="font-suwargi inline-flex items-center justify-center w-[130px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10">
+              <div className="font-suwargi inline-flex items-center justify-center w-[130px] h-[30px] rounded-xl bg-transparent border border-[#A11692] px-3 py-1 text-[16px] text-[#A11692] transition-colors ">
                 Keuntungan
               </div>
               <h2 className="text-[26px]  sm:text-3xl xl:text-4xl">
@@ -50,7 +50,7 @@ export function AdvantagesSection() {
                   alt={`${advantage.title} icon`}
                   width={48} // Ukuran default untuk mobile
                   height={48}
-                  className="sm:w-16 sm:h-16" // Ukuran lebih besar di layar sm ke atas
+                  className="sm:w-16 sm:h-16" 
                 />
                 <div className="grid gap-1">
                   {/* Judul yang ukurannya responsif */}
