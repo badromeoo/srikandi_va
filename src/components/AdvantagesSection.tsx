@@ -6,17 +6,17 @@ const advantages = [
   {
     icon: "/images/icon-efisien-waktu.svg",
     title: "Efisien Waktu",
-    description: "Lebih banyak memiliki waktu luang karena tidak perlu memikirkan tugas tugas kecil yang terbengkalai.",
+    description: "Tidak lagi terjebak di tugas kecil sehari-hari yang memakan waktu.",
   },
   {
     icon: "/images/icon-productivitas.svg",
     title: "Meningkatkan Produktivitas",
-    description: "Bisa mengerjakan tugas lain yang lebih penting.",
+    description: "Lebih fokus ke strategi, klien, dan pengembangan bisnis.",
   },
   {
     icon: "/images/icon-pekerjaan-tertata.svg",
     title: "Pekerjaan Tertata",
-    description: "Bisa mengatur pekerjaan yang datang dan dibagi dengan asisten virtual.",
+    description: "Semua rapi, jelas, dan terkendali.",
   },
 ];
 
@@ -35,7 +35,7 @@ export function AdvantagesSection() {
                 Temukan <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> yang Memenuhi <span className="font-suwargi text-[#F45866]">Kebutuhanmu</span>
               </h2>
               <p className="max-w-[600px] font-light  text-base ">
-                Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak sampai mengatur pekerjaan agar lebih mengehemat waktu.
+                Dengan Srikandi VA, kamu bisa:
               </p>
             </div>
           </div>
