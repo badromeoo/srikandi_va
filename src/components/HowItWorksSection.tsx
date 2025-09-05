@@ -25,8 +25,8 @@ export function HowItWorksSection() {
           <div className="space-y-2">
             <div className="inline-block text-center rounded-xl border border-[#A11692] bg-transparent w-[130px] h-[30px] px-3 py-1 text-[16px] font-suwargi text-[#A11692]">Cara Kerja</div>
             <h2 className=" 2xl:text-4xl xl:text-[36px] font-normal sm:text-3xl">
-              <span className="font-bold">Langkah Mudah Menemukan</span>
-              <br /> <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> <span className="font-bold">yang</span> <span className="font-suwargi text-[#F45866]">Sesuai</span>
+              <span className="font-bold">Langkah Mudah </span>
+              <br /> <span className="font-suwargi text-[#F45866]">Mengembangkan Bisnis</span> <span className="font-bold">dengan</span> <span className="font-suwargi text-[#F45866]">Virtual Asisten</span>
             </h2>
             <p className="font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">Mendapat kandidat asisten virtual lebih mudah dengan talenta pilihan kami.</p>
           </div>
