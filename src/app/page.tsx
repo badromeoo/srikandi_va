@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
     <Navbar />
-    <div className="bg-[#EDF2F7] ">
+    <div className="w-full bg-[#EDF2F7] ">
     <HeroSection />
     </div>
     <div>
@@ -19,10 +19,10 @@ export default function HomePage() {
     <div>
       <AdvantagesSection />
     </div>
-    <div className="bg-[#EDF2F7] ">
+    <div className="w-full bg-[#EDF2F7] ">
       <ProgramsSection />
     </div>
-    <div className="bg-[#EDF2F7] ">
+    <div className="w-full bg-[#EDF2F7] ">
       <HowItWorksSection />
     </div>
     <div>
