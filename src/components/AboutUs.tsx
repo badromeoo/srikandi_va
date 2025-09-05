@@ -13,7 +13,7 @@ export function AboutUs() {
             </div>
             {/* Kolom Gambar */}
             <div className="flex flex-col items-center">
-              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
+              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/imagefixAboutUs.jpg" width={700} height={500} />
             </div>
 
             {/* Kolom Teks */}
@@ -39,7 +39,7 @@ export function AboutUs() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="lg:order-last flex justify-center">
-              <Image alt="Meningkatkan Produktivitas" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/gambarwanita_aboutus.png" width={700} height={500} />
+              <Image alt="Meningkatkan Produktivitas" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/imageAboutUs2.jpg" width={700} height={500} />
             </div>
             {/* Kolom Teks dengan tombol di kiri */}
             <div className="flex flex-col justify-center space-y-4">
