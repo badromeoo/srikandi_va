@@ -61,7 +61,7 @@ export function HeroSection() {
                     />
                   </div>
                   {/* Teks dengan ukuran responsif */}
-                  <span className="font-light tracking-normal text-sm md:text-base">
+                  <span className="font-light  tracking-[0.5rem] leading-[140%] text-sm md:text-base">
                     {feature.text}
                   </span>
                 </div>
