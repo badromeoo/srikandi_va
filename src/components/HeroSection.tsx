@@ -1,39 +1,72 @@
+// src/components/HeroSection.tsx
 import Image from "next/image";
 import Link from "next/link";
 
+const features = [
+  { text: "Lebih produktif", icon: "/images/logocentang.svg" },
+  { text: "Hemat waktu", icon: "/images/logocentang.svg" },
+  { text: "Berdampak sosial", icon: "/images/logocentang.svg" },
+];
+
 export function HeroSection() {
   return (
-    // Hapus warna latar belakang dari sini
-    <section className=" py-12 md:py-24 lg:py-10 ">
+    <section className="py-12 md:py-24 lg:py-10">
       <div className="container mx-auto px-4 md:px-6">
-        <div className=" grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className=" flex flex-col justify-center space-y-4">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          {/* Kolom Teks Kiri */}
+          <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className={`  text-3xl text-[#404040] leading-[1] font-bold  sm:text-5xl tracking-[2px] xl:text-[55px]`}>
-                {/* Gunakan font-heading yang sudah kita siapkan */}
+              <h1 className="text-3xl font-bold tracking-normal text-[#404040] sm:text-5xl xl:text-[55px] leading-[1]">
                 <span className="font-suwargi text-[#F45866] tracking-[2px]">Asisten Virtual </span>
                 <br />
                 Cerdas untuk Semua
                 <span className="font-suwargi text-[#F45866] tracking-[2px]"> Kebutuhanmu</span>
               </h1>
-              <Image src="/images/garisungu.svg" alt="" width={429.11} height={30} />
-              <p className={`max-w-[600px] 2xl:mt-[50px] mt-[20px]  font-[300]  md:text-xl  `}>
-               Membantu meningkatkan produktivitas pebisnis dan professional dengan mengeliminasi tugas tugas prioritas rendah tapi memerlukan waktu untuk mengerjakannya.
-              </p>
+              <Image src="/images/garisungu.svg" alt="Garis Bawah" width={429} height={30} />
+              <p className="max-w-[600px] mt-[20px] font-light md:text-xl 2xl:mt-[50px]">Membantu pebisnis, profesional, dan UMKM jadi lebih produktif dengan mengurus tugas-tugas kecil yang sering makan waktu.</p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <div className="flex">
               <Link
                 href="#about-us"
-                className={`inline-flex  w-[234px] h-[51] 2xl:mt-[50px] mt-[20px] items-center justify-center rounded-md bg-[#A11692] px-8 text-[15px] font-normal  shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-[#A11692] dark:text-[#F9F7F3] dark:hover:bg-[#ae45a3] dark:focus-visible:ring-gray-300`}
+                className="inline-flex h-[51px] w-[234px] mt-[20px] 2xl:mt-[50px] items-center justify-center rounded-md bg-[#A11692] px-8 text-[15px] text-white shadow transition-colors hover:bg-[#A11692]/90 focus-visible:outline-none"
               >
                 Pelajari selengkapnya
               </Link>
             </div>
           </div>
-          <div className="mt-[50px] md:mt-10 relative flex items-center justify-center">
+    {/* Kolom Gambar Kanan */}
+          <div className="relative mt-10 flex items-center justify-center md:mt-10">
             {/* Gambar utama */}
-            <Image alt="Hero" className="rounded-xl object-cover" height="550" src="/images/gambarwanitahero.jpg" width="550" />
-            <Image alt="Fitur Unggulan" className="absolute bottom-5 md:left-25 lg:left-5 xl:left-10 2xl:left-25" height="500" src="/images/centanghero.svg" width="289" />
+            <Image
+              alt="Hero"
+              className="rounded-xl object-cover"
+              height="550"
+              src="/images/gambarwanitahero.jpg"
+              width="550"
+            />
+            {/* Daftar Fitur Unggulan dengan spacing responsif */}
+            <div className="absolute bottom-4 left-5 flex flex-col items-start space-y-2 sm:bottom-6 sm:left-10 md:bottom-8  md:left-25 lg:left-5 xl:left-10  lg:space-y-3">
+              {features.map((feature) => (
+                <div
+                  key={feature.text}
+                  className="flex items-center space-x-2 rounded-lg border border-[#A11692] bg-white p-2 pr-4 shadow-lg backdrop-blur-sm"
+                >
+                  {/* Ikon dengan ukuran responsif */}
+                  <div className="h-5 w-5 md:h-6 md:w-6">
+                    <Image
+                      src={feature.icon}
+                      alt="Checkmark"
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  {/* Teks dengan ukuran responsif */}
+                  <span className="font-light tracking-normal text-sm md:text-base">
+                    {feature.text}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

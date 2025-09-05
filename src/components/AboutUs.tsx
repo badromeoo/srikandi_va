@@ -21,14 +21,12 @@ export function AboutUs() {
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
 
-                
-
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
-                  Berawal dari <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
+                  Berawal dari <span className="font-suwargi text-[#F45866]">Perjuangan Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
                 </h2>
                 <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
-                  Banyak ibu rumah tangga yang kesulitan mencari pekerjaan layak karena terbatasnya peluang dan perusahaan yang lebih mengutamakan talenta muda. Kami hadir untuk memberikan solusi dengan menciptakan peluang kerja sebagai
-                  asisten virtual.
+                  Banyak ibu rumah tangga kesulitan mendapat pekerjaan layak karena keterbatasan peluang. Kami hadir untuk menjembatani, menciptakan lapangan kerja sebagai asisten virtual, sekaligus membantu bisnismu lebih efisien. <br />{" "}
+                  <br /> Bersama Srikandi VA, kamu ikut andil dalam mendukung pemberdayaan perempuan.
                 </p>
               </div>
             </div>
@@ -50,12 +48,12 @@ export function AboutUs() {
                   Membantu <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> dan Meningkatkan <span className="font-suwargi text-[#F45866]">Produktivitasmu</span>
                 </h2>
                 <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
-                  Tugas-tugas kecil yang sering terabaikan bisa menghambat produktivitas. Dengan merekrut asisten virtual, kamu bisa mendelegasikan pekerjaan tersebut dan fokus pada hal-hal yang lebih penting. <br /> <br /> Kami ada untuk membantu ibu rumah tangga terampil, memberikan dukungan efisien dan meningkatkan produktivitasmu.
+                  Di Srikandi VA, kami membekali Ibu Rumah Tangga dengan pelatihan digital agar siap bekerja profesional. Dengan begitu, kamu mendapat dukungan efisien untuk pekerjaanmu, sekaligus membuka peluang kerja yang bermakna.
                 </p>
                 {/* Pembungkus ini memastikan tombol berada di kiri */}
                 <div className="flex justify-start">
                   <Link className="inline-flex text-white h-10 items-center justify-center rounded-md bg-[#A11692] px-8 text-sm   shadow transition-colors hover:bg-[#A11692]/90" href="/request">
-                    Hubungi kami
+                    Konsultasi Sekarang
                   </Link>
                 </div>
               </div>
