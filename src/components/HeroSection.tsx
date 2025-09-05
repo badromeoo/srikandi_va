@@ -45,7 +45,7 @@ export function HeroSection() {
               width="550"
             />
             {/* Daftar Fitur Unggulan dengan spacing responsif */}
-            <div className="absolute bottom-4 left-5 flex flex-col items-start space-y-2 sm:bottom-6 sm:left-10 md:bottom-8  md:left-25 lg:left-5 xl:left-10  lg:space-y-3">
+            <div className="absolute bottom-4 left-5 flex flex-col items-start space-y-2 sm:bottom-6 sm:left-10 md:bottom-8  md:left-25 lg:left-5 xl:left-10 2xl:left-25 lg:space-y-3">
               {features.map((feature) => (
                 <div
                   key={feature.text}
