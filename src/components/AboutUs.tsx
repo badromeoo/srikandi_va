@@ -8,9 +8,10 @@ export function AboutUs() {
       <section id="about-us" className="w-full bg-white py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 lg:hidden">
+            <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 lg:hidden ">
               Tentang kami
             </div>
+            
             {/* Kolom Gambar */}
             <div className="flex flex-col items-center">
               <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/imagefixAboutUs.jpg" width={700} height={500} />
@@ -20,14 +21,17 @@ export function AboutUs() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
-
-                <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
+                 <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 hidden lg:flex ">
+              Tentang kami
+            </div>
+ <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Berawal dari <span className="font-suwargi text-[#F45866]">Perjuangan Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
                 </h2>
                 <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
                   Banyak ibu rumah tangga kesulitan mendapat pekerjaan layak karena keterbatasan peluang. Kami hadir untuk menjembatani, menciptakan lapangan kerja sebagai asisten virtual, sekaligus membantu bisnismu lebih efisien. <br />{" "}
                   <br /> Bersama Srikandi VA, kamu ikut andil dalam mendukung pemberdayaan perempuan.
                 </p>
+               
               </div>
             </div>
           </div>
