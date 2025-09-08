@@ -35,7 +35,7 @@ export function AdvantagesSection() {
                 Temukan <span className="font-suwargi text-[#F45866]">Asisten Virtual</span> yang Memenuhi <span className="font-suwargi text-[#F45866]">Kebutuhanmu</span>
               </h2>
               <p className="max-w-[600px] font-light  text-base ">
-                Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak sampai mengatur pekerjaan agar lebih mengehemat waktu.
+                Asisten virtual bukan hanya untuk mengerjakan sedikit tugas kecil, tapi asisten virtual bisa juga membantu mengerjakan pekerjaan yang memakan waktu banyak hingga mengatur pekerjaan agar lebih mengehemat waktu.
               </p>
             </div>
           </div>
