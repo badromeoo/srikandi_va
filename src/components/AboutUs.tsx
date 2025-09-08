@@ -14,7 +14,7 @@ export function AboutUs() {
             
             {/* Kolom Gambar */}
             <div className="flex flex-col items-center">
-              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/imagefixAboutUs.jpg" width={700} height={500} />
+              <Image alt="Ibu Rumah Tangga Bekerja" className="rounded-xl w-full h-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px]" src="/images/fiximagetentangkami.jpg" width={700} height={500} />
             </div>
 
             {/* Kolom Teks */}
@@ -28,7 +28,7 @@ export function AboutUs() {
                   Berawal dari <span className="font-suwargi text-[#F45866]">Perjuangan Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
                 </h2>
                 <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
-                  Banyak ibu rumah tangga kesulitan mendapat pekerjaan layak karena keterbatasan peluang. Kami hadir untuk menjembatani, menciptakan lapangan kerja sebagai asisten virtual, sekaligus membantu bisnismu lebih efisien. <br />{" "}
+                  Banyak ibu rumah tangga kesulitan mendapat pekerjaan layak karena keterbatasan peluang dan waktu. Kami hadir untuk menjembatani, menciptakan lapangan kerja sebagai asisten virtual, sekaligus membantu bisnismu lebih efisien. <br />{" "}
                   <br /> Bersama Srikandi VA, kamu ikut andil dalam mendukung pemberdayaan perempuan.
                 </p>
                
@@ -49,7 +49,7 @@ export function AboutUs() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
-                  Membantu <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga</span> dan Meningkatkan <span className="font-suwargi text-[#F45866]">Produktivitasmu</span>
+                <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga </span>Terbantu dan Produktivitasmu <span className="font-suwargi text-[#F45866]">Meningkatkan</span>
                 </h2>
                 <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
                   Di Srikandi VA, kami membekali Ibu Rumah Tangga dengan pelatihan digital agar siap bekerja profesional. Dengan begitu, kamu mendapat dukungan efisien untuk pekerjaanmu, sekaligus membuka peluang kerja yang bermakna.
