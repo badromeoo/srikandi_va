@@ -28,7 +28,7 @@ export function HowItWorksSection() {
               <span className="font-bold">Langkah Mudah </span>
               <br /> <span className="font-suwargi text-[#F45866]">Mengembangkan Bisnis</span> <span className="font-bold">dengan</span> <span className="font-suwargi text-[#F45866]">Virtual Asisten</span>
             </h2>
-            <p className="font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">Mendapat kandidat asisten virtual lebih mudah dengan talenta pilihan kami.</p>
+            <p className="font-light   ">Mendapat kandidat asisten virtual lebih mudah dengan talenta pilihan kami.</p>
           </div>
         </div>
 
