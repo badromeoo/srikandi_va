@@ -8,7 +8,7 @@ export function AboutUs() {
       <section id="about-us" className="w-full bg-white py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 lg:hidden ">
+            <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors  lg:hidden ">
               Tentang kami
             </div>
             
@@ -21,7 +21,7 @@ export function AboutUs() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-4">
                 {/* Tag "Tentang kami" untuk desktop, tersembunyi di mobile */}
-                 <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors hover:bg-[#A11692]/10 hidden lg:flex ">
+                 <div className="items-center text-center justify-center font-suwargi w-[140px] h-[30px] rounded-xl border border-[#A11692] bg-transparent px-3 py-1 text-[16px] text-[#A11692] transition-colors  hidden lg:flex ">
               Tentang kami
             </div>
  <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
