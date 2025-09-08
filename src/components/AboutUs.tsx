@@ -27,7 +27,7 @@ export function AboutUs() {
  <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                   Berawal dari <span className="font-suwargi text-[#F45866]">Perjuangan Ibu Rumah Tangga</span> yang Kesulitan Mencari <span className="font-suwargi text-[#F45866]">Pekerjaan yang Layak</span>
                 </h2>
-                <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
+                <p className="max-w-[600px] font-light   ">
                   Banyak ibu rumah tangga kesulitan mendapat pekerjaan layak karena keterbatasan peluang dan waktu. Kami hadir untuk menjembatani, menciptakan lapangan kerja sebagai asisten virtual, sekaligus membantu bisnismu lebih efisien. <br />{" "}
                   <br /> Bersama Srikandi VA, kamu ikut andil dalam mendukung pemberdayaan perempuan.
                 </p>
@@ -51,7 +51,7 @@ export function AboutUs() {
                 <h2 className="text-[26px] text-[#404040] sm:text-3xl md:text-4xl">
                 <span className="font-suwargi text-[#F45866]">Ibu Rumah Tangga </span>Terbantu dan Produktivitasmu <span className="font-suwargi text-[#F45866]">Meningkatkan</span>
                 </h2>
-                <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed ">
+                <p className="max-w-[600px] font-light   ">
                   Di Srikandi VA, kami membekali Ibu Rumah Tangga dengan pelatihan digital agar siap bekerja profesional. Dengan begitu, kamu mendapat dukungan efisien untuk pekerjaanmu, sekaligus membuka peluang kerja yang bermakna.
                 </p>
                 {/* Pembungkus ini memastikan tombol berada di kiri */}

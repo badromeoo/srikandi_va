@@ -22,7 +22,7 @@ export function ProgramsSection() {
               <span className="font-bold">Dapat Memberi </span>
               <span className="font-suwargi text-[#F45866]">Manfaat yang</span> <span className="font-suwargi text-[#F45866]">Besar</span>
             </h2>
-            <p className="max-w-[600px] font-light  md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed">
+            <p className="max-w-[600px] font-light ">
                Meningkatkan produktivitasmu dengan mengerjakan tugas yang tidak memiliki prioritas tinggi namun memerlukan waktu untuk mengerjakannya.
             </p>
           </div>
